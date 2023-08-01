@@ -84,6 +84,13 @@ class _BookPageState extends State<BookPage> {
           )),
           Expanded(flex: 1,child: Text("")),
           Expanded(flex: 1,child: Text("")),
+          Spacer(),
+          Container(
+            height: 600,
+            width: double.infinity,
+            color: Colors.red,
+            // child: isColor == true ? RecentPage() : PopularPoem(),
+          )
         ],
       ),
     );
