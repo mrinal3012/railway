@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:railway/data/custom_widget_page.dart';
 import 'package:railway/data/model_page.dart';
 
 class HistoryPage extends StatefulWidget {
@@ -19,22 +20,22 @@ class _HistoryPageState extends State<HistoryPage> {
         child: ListView.builder(
           itemCount: historyList.length,
           itemBuilder: (context, index) =>
-              Container(height: 160,
+              Container(height: 100,
               color: Colors.white,
               width: double.infinity,
               child: Column(children: [
                 Container(
-                  height: 154,
+                  height: 94,
                   color: Colors.white,
                   child: Row(children: [
-                    // Container(child: Image.asset("${historyValue[index].name}"),)
+
                     Expanded(flex: 2, child: Container(height: 50,
                         width: 50,
-
                         child: Image(image: AssetImage("${historyList[index].image}")),
-                        // child: Image(image: AssetImage("${historyList[index].image}"))
                     )),
-                    Expanded(flex: 8, child: Container(child:Text("${historyList[index].name}"),)),
+                    Expanded(flex: 8, child: Container(child:Text("${historyList[index].name}",
+                      style:mystyleroboto(18,Colors.black,FontWeight.w500)
+                    ),)),
                   ],),
                 ),
 

@@ -17,36 +17,52 @@ class StationModel{
   String ? firstStationName;
   String ? secondStationName;
   int ? amount;
-  StationModel({this.firstStationName,this.secondStationName,this.amount});
+  int count=1;
+  int ? ticket;
+  StationModel({this.firstStationName,this.secondStationName,this.amount,this.ticket});
 }
 List<StationModel> stationList=[
-StationModel(firstStationName: "Uttara North",secondStationName: "Uttara North",amount: 0),
-StationModel(firstStationName: "Uttara North",secondStationName: "Uttara Center",amount: 20),
-StationModel(firstStationName: "Uttara North",secondStationName: "Uttara South",amount: 20),
-StationModel(firstStationName: "Uttara North",secondStationName: "Pallabi",amount: 30),
-StationModel(firstStationName: "Uttara North",secondStationName: "Mirpur-11",amount: 30),
-StationModel(firstStationName: "Uttara North",secondStationName: "Mirpur-10",amount: 40),
-  StationModel(firstStationName: "Uttara North",secondStationName: "Kazipara",amount: 40),
-StationModel(firstStationName: "Uttara North",secondStationName: "Shewrapara",amount: 50),
-StationModel(firstStationName: "Uttara North",secondStationName: "Agargaon",amount: 60),
+StationModel(firstStationName: "Uttara North",secondStationName: "Uttara North",amount: 0,ticket:03164565 ),
+StationModel(firstStationName: "Uttara North",secondStationName: "Uttara Center",amount: 20,ticket:03164566),
+StationModel(firstStationName: "Uttara North",secondStationName: "Uttara South",amount: 20,ticket:03164567),
+StationModel(firstStationName: "Uttara North",secondStationName: "Pallabi",amount: 30,ticket:03164568),
+StationModel(firstStationName: "Uttara North",secondStationName: "Mirpur-11",amount: 30,ticket:03164569),
+StationModel(firstStationName: "Uttara North",secondStationName: "Mirpur-10",amount: 40,ticket:03164570),
+  StationModel(firstStationName: "Uttara North",secondStationName: "Kazipara",amount: 40,ticket:03164571),
+StationModel(firstStationName: "Uttara North",secondStationName: "Shewrapara",amount: 50,ticket:03164572),
+StationModel(firstStationName: "Uttara North",secondStationName: "Agargaon",amount: 60,ticket:03164573),
 
-  StationModel(firstStationName: "Uttara Center",secondStationName: "Uttara North",amount: 20),
-  StationModel(firstStationName: "Uttara Center",secondStationName: "Uttara Center",amount: 0),
-  StationModel(firstStationName: "Uttara Center",secondStationName: "Uttara South",amount: 20),
-  StationModel(firstStationName: "Uttara Center",secondStationName: "Pallabi",amount: 20),
-  StationModel(firstStationName: "Uttara Center",secondStationName: "Mirpur-11",amount: 30),
-  StationModel(firstStationName: "Uttara Center",secondStationName: "Mirpur-10",amount: 30),
-  StationModel(firstStationName: "Uttara Center",secondStationName: "Kazipara",amount: 40),
-  StationModel(firstStationName: "Uttara Center",secondStationName: "Shewrapara",amount: 40),
-  StationModel(firstStationName: "Uttara Center",secondStationName: "Agargaon",amount: 50),
+  StationModel(firstStationName: "Uttara Center",secondStationName: "Uttara North",amount: 20,ticket:03164574),
+  StationModel(firstStationName: "Uttara Center",secondStationName: "Uttara Center",amount: 0,ticket:03164575),
+  StationModel(firstStationName: "Uttara Center",secondStationName: "Uttara South",amount: 20,ticket:03164576),
+  StationModel(firstStationName: "Uttara Center",secondStationName: "Pallabi",amount: 20,ticket:03164577),
+  StationModel(firstStationName: "Uttara Center",secondStationName: "Mirpur-11",amount: 30,ticket:03164578),
+  StationModel(firstStationName: "Uttara Center",secondStationName: "Mirpur-10",amount: 30,ticket:03164579),
+  StationModel(firstStationName: "Uttara Center",secondStationName: "Kazipara",amount: 40,ticket:03164580),
+  StationModel(firstStationName: "Uttara Center",secondStationName: "Shewrapara",amount: 40,ticket:03164581),
+  StationModel(firstStationName: "Uttara Center",secondStationName: "Agargaon",amount: 50,ticket:03164582),
 
-  StationModel(firstStationName: "Pallabi",secondStationName: "Uttara North",amount: 30),
-  StationModel(firstStationName: "Pallabi",secondStationName: "Uttara Center",amount: 20),
-  StationModel(firstStationName: "Pallabi",secondStationName: "Uttara South",amount: 20),
-  StationModel(firstStationName: "Pallabi",secondStationName: "Pallabi",amount: 0),
-  StationModel(firstStationName: "Pallabi",secondStationName: "Mirpur-11",amount: 20),
-  StationModel(firstStationName: "Pallabi",secondStationName: "Mirpur-10",amount: 20),
-  StationModel(firstStationName: "Pallabi",secondStationName: "Kazipara",amount: 20),
-  StationModel(firstStationName: "Pallabi",secondStationName: "Shewrapara",amount: 30),
-  StationModel(firstStationName: "Pallabi",secondStationName: "Agargaon",amount: 30),
+  StationModel(firstStationName: "Pallabi",secondStationName: "Uttara North",amount: 30,ticket:03164583),
+  StationModel(firstStationName: "Pallabi",secondStationName: "Uttara Center",amount: 20,ticket:03164584),
+  StationModel(firstStationName: "Pallabi",secondStationName: "Uttara South",amount: 20,ticket:03164585),
+  StationModel(firstStationName: "Pallabi",secondStationName: "Pallabi",amount: 0,ticket:03164586),
+  StationModel(firstStationName: "Pallabi",secondStationName: "Mirpur-11",amount: 20,ticket:03164587),
+  StationModel(firstStationName: "Pallabi",secondStationName: "Mirpur-10",amount: 20,ticket:03164588),
+  StationModel(firstStationName: "Pallabi",secondStationName: "Kazipara",amount: 20,ticket:03164589),
+  StationModel(firstStationName: "Pallabi",secondStationName: "Shewrapara",amount: 30,ticket:03164590),
+  StationModel(firstStationName: "Pallabi",secondStationName: "Agargaon",amount: 30,ticket:03164591),
+];
+
+class Payment{
+  String ? name;
+  String ? image;
+  Payment({this.name , this.image});
+}
+List<Payment> paymentList=[
+  Payment(name: "bKash",image: "images/bkash.webp"),
+  Payment(name: "Upay",image: "images/upay.png"),
+  Payment(name: "Rocket",image: "images/rocket.png"),
+  Payment(name: "Nagad",image: "images/nagad.png"),
+  Payment(name: "Credit / Debit Card",image: "images/mastercard.png"),
+  Payment(name: "VISA",image: "images/visa.png"),
 ];
