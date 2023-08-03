@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "704983907124",
+    "project_id": "railway-e2c18",
+    "storage_bucket": "railway-e2c18.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704983907124:android:adca5e118ddb2c3ef60361",
+        "android_client_info": {
+          "package_name": "com.example.railway"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "704983907124-6doaltt4mg7pr35hj6upmh98u3v5ds05.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBctECiqmOCKjieQdKkroH7QSVjFnj5fOo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "704983907124-6doaltt4mg7pr35hj6upmh98u3v5ds05.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

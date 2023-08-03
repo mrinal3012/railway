@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:railway/data/firebase_helper.dart';
 import 'package:railway/login_page.dart';
 import 'package:railway/profile/book_page.dart';
 
@@ -65,12 +66,13 @@ class _SingUpPageState extends State<SingUpPage> {
                             flex: 2,
                             child: GestureDetector(
                                 onTap: () {
-                                  Navigator.of(context).push(MaterialPageRoute(
-                                    builder: (context) => LoginPage(),
-                                  ));
+                                  var e=emailController.text;
+                                  var p=passwordController.text;
+                                  var obj=FirebaseHelper().singup(e, p, context);
+                                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => LoginPage(),));
                                 },
                                 child: Container(
-                                  child: Image.asset("images/login.png"),
+                                  child: Image.asset("images/button.png"),
                                 ))),
                         Expanded(
                             flex: 1,
@@ -81,14 +83,16 @@ class _SingUpPageState extends State<SingUpPage> {
                                 child: Row(
                                   children: [
                                     Expanded(
-                                        child: InkWell(
-                                          onTap: () {
-
-                                          },
-                                          child: Container(
+                                        child: Container(
                                       child: Image.asset("images/facebook.png"),
+                                    )),
+                                    SizedBox(
+                                      width: 30,
                                     ),
-                                        )),
+                                    Expanded(
+                                        child: Container(
+                                      child: Image.asset("images/google.webp"),
+                                    )),
                                     SizedBox(
                                       width: 30,
                                     ),
@@ -96,17 +100,6 @@ class _SingUpPageState extends State<SingUpPage> {
                                         child: GestureDetector(
                                           onTap: () {
 
-                                          },
-                                          child: Container(
-                                      child: Image.asset("images/google.webp"),
-                                    ),
-                                        )),
-                                    SizedBox(
-                                      width: 30,
-                                    ),
-                                    Expanded(
-                                        child: GestureDetector(
-                                          onTap: () {
                                           },
                                           child: Container(
                                       child: Image.asset("images/phone.png"),

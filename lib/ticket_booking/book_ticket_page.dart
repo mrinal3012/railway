@@ -12,6 +12,9 @@ class _BookTicket_PageState extends State<BookTicket_Page> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.pink,
+      body: Container(
+        height: double.infinity,
+      ),
     );
   }
 }

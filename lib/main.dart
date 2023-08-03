@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:railway/data/firebase_helper.dart';
 import 'package:railway/home_page.dart';
 import 'package:railway/login_page.dart';
 import 'package:railway/profile/book_page.dart';
 import 'package:railway/profile/demo.dart';
 import 'package:railway/registration/singup_page.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+void main()  {
   runApp(const MyApp());
 }
 
@@ -19,8 +21,6 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-
-
         primarySwatch: Colors.blue,
       ),
       home: HomePage(),
