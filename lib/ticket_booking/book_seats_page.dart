@@ -93,9 +93,9 @@ class _BookSeatPageState extends State<BookSeatPage> {
                               ),),
                               Expanded(child: Image.asset("images/qrcode.png"))
                             ],),
-                            ElevatedButton(onPressed: () {
+                            ElevatedButton(style: ElevatedButton.styleFrom(backgroundColor: Color(0xff015281)),onPressed: () {
                               Navigator.of(context).push(MaterialPageRoute(builder: (context) => PaymentPage(),));
-                            }, child: Text("Payment"))
+                            }, child: Text("Payment",style: mystyleroboto(18,Colors.black,FontWeight.w500)))
                           ],
                         ),
                       ),

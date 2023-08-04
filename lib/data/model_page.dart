@@ -66,3 +66,20 @@ List<Payment> paymentList=[
   Payment(name: "Credit / Debit Card",image: "images/mastercard.png"),
   Payment(name: "VISA",image: "images/visa.png"),
 ];
+class Station{
+  String ? name;
+  int ? id ;
+  int ? amount;
+  Station({this.name,this.amount,this.id});
+}
+List<Station> stationNameList=[
+  Station(id:1 ,name: "Uttara North",amount:0 ),
+  Station(id:2 ,name: "Uttara Center",amount:0 ),
+  Station(id:3 ,name: "Uttara South",amount:0 ),
+  Station(id:4 ,name: "Pallabi",amount:0 ),
+  Station(id:5 ,name: "Mirpur-11",amount:0 ),
+  Station(id:6 ,name: "Mirpur-10",amount:0 ),
+  Station(id:7 ,name: "Kazipara",amount:0 ),
+  Station(id:8 ,name: "Shewrapara",amount:0 ),
+  Station(id:9 ,name: "Agargaon",amount:0 ),
+];
